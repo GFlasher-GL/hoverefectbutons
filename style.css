@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.genel .btn {
+    border-radius: 10px;
+    position: relative;
+    left: 170px;
+    width: 400px;
+    height: 70px;
+    border: 2px solid #ff0000;
+    margin: 80px;
+    line-height: 45px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.genel .btn a {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+.genel .btn.btn_1:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    transform: skewY(10deg);
+    transition: all 0.5s ease;
+    background: rgb(255, 0, 0);
+}
+
+.genel .btn a:hover {
+    color: #ffffff;
+}
+
+.genel .btn.btn_1:after {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: skewY(10deg);
+    transition: all 0.5s ease;
+    background: rgb(255, 0, 0);
+}
+
+.genel .btn.btn_1:hover:before {
+    top: -20px;
+}
+
+.genel .btn.btn_1:hover:after {
+    top: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.as {
+    margin-top: 15px;
+}
